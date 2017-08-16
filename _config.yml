@@ -1,0 +1,8 @@
+title: Deployment Framework for BizTalk (a.k.a. BTDF)
+description: Professional and powerful deployment automation for your BizTalk applications
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
