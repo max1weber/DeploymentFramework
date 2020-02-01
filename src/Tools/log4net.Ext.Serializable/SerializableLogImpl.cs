@@ -143,7 +143,7 @@ namespace log4net.Ext.Serializable
 
 			data.LoggerName = _logger.Name;
 			data.Level = level;
-			data.TimeStamp = DateTime.Now;
+			data.TimeStampUtc = DateTime.UtcNow;
 
 			return data;
 		}

@@ -28,7 +28,7 @@ namespace log4net.Ext.Serializable.UnitTest
 		{
 
 			// Note - a registry key must exist under hklm/software for this string below
-			string domain = "log4net.Ext.Serializable.UnitTest1.2.10";
+			string domain = "log4net.Ext.Serializable.UnitTest2.0.8";
 			SLog log = (SLog)SLogManager.GetLogger(domain,typeof(TestSerializableLog));
 			log.RegistryConfigurator();
 
