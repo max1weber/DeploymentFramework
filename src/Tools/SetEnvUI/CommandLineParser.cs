@@ -1137,7 +1137,7 @@ public static bool IsConsole()
                 try
                 {
                     // FIX: Don't require project to reference System.Windows.Forms.dll
-                    Assembly    assem = Assembly.LoadWithPartialName("System.Windows.Forms");
+                    Assembly    assem = Assembly.Load("System.Windows.Forms");
                     Type        type = assem.GetType("System.Windows.Forms.MessageBox");
                     MethodInfo  method = type.GetMethod("Show", new Type[] { typeof(string), typeof(string) });
                     method.Invoke(null, new Object[] { s, GetModuleName() });
