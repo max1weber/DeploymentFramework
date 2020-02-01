@@ -6,10 +6,10 @@
     This source file is subject to the Microsoft Public License (Ms-PL).
 -->
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension" xmlns:vs="http://schemas.microsoft.com/wix/VSExtension">
-  <?define ProductVersion="5.7" ?>
+  <?define ProductVersion="6.0" ?>
 
   <Product Id="$(var.ProductID)" Name="Deployment Framework for BizTalk $(var.ProductVersion)"
-           Language="1033" Version="$(var.ProductVersionFull)" Manufacturer="Thomas F Abraham" UpgradeCode="a0550f65-4338-4892-884e-594593e8b4f7">
+           Language="1033" Version="$(var.ProductVersionFull)" Manufacturer="Thomas F Abraham / M Weber" UpgradeCode="2427BE60-278F-4FC8-919C-FE9A2B17D40E">
 		<Package InstallerVersion="200" Compressed="yes" />
 
 		<Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
@@ -19,17 +19,9 @@
     <WixVariable Id="WixUILicenseRtf" Value="..\License.rtf" />
     <WixVariable Id="WixUISupportPerUser" Value="0" />
     
-    <Property Id="ESBTOOLKIT21_DIR" Secure="yes">
-      <RegistrySearch Id="ESBTOOLKIT21_DIR_REG" Root="HKLM" Key="SOFTWARE\Microsoft\BizTalk ESB Toolkit\2.1" Name="InstallPath" Type="directory" />
-    </Property>
+   
 
-    <Property Id="ESBTOOLKIT22_DIR" Secure="yes">
-      <RegistrySearch Id="ESBTOOLKIT22_DIR_REG" Root="HKLM" Key="SOFTWARE\Microsoft\BizTalk ESB Toolkit" Name="InstallPath" Type="directory" />
-    </Property>
-
-    <Property Id="ESBTOOLKIT23_DIR" Secure="yes">
-      <RegistrySearch Id="ESBTOOLKIT23_DIR_REG" Root="HKLM" Key="SOFTWARE\Microsoft\BizTalk ESB Toolkit" Name="InstallPath" Type="directory" />
-    </Property>
+   
 
     <Property Id="ESBTOOLKIT24_DIR" Secure="yes">
       <RegistrySearch Id="ESBTOOLKIT24_DIR_REG" Root="HKLM" Key="SOFTWARE\Microsoft\BizTalk ESB Toolkit" Name="InstallPath" Type="directory" />

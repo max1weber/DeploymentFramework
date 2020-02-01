@@ -4,14 +4,10 @@
 // See http://www.opensource.org/licenses/ms-pl.html.
 // All other rights reserved.
 
+using SSOSettingsFileManager;
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
-using SSOSettingsFileManager;
 
 namespace SSOSettingsEditor
 {

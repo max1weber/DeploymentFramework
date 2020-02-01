@@ -5,22 +5,19 @@
 // All other rights reserved.
 
 using System.Reflection;
-using System.Runtime.CompilerServices;
 
-// General Information about an assembly is controlled through the following 
+// General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Deployment Framework for BizTalk")]
-[assembly: AssemblyCopyright("Copyright (C) 2005-2017 Scott Colestock, Thomas F. Abraham")]
+[assembly: AssemblyCopyright("Copyright (C) 2005-2020 Scott Colestock, Thomas F. Abraham, M. Weber")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Version information for an assembly consists of the following four values:
 //
 //      Major Version
-//      Minor Version 
+//      Minor Version
 //      Build Number
 //      Revision
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]

@@ -4,12 +4,9 @@
 // See http://www.opensource.org/licenses/ms-pl.html.
 // All other rights reserved.
 
-using System;
+using Microsoft.BizTalk.SSOClient.Interop;
 using System.Collections;
 using System.Diagnostics;
-using System.IO;
-using System.Text;
-using Microsoft.BizTalk.SSOClient.Interop;
 
 namespace SSOSettingsFileManager
 {
@@ -23,7 +20,7 @@ namespace SSOSettingsFileManager
         /// </summary>
         private class SSOPropertyBag : IPropertyBag
         {
-            Hashtable _props = new Hashtable();
+            private Hashtable _props = new Hashtable();
 
             #region IPropertyBag Members
 
@@ -48,7 +45,7 @@ namespace SSOSettingsFileManager
                 ptrVar = _props[propName];
             }
 
-            #endregion
+            #endregion IPropertyBag Members
         }
 
         private const string PropName = "AppConfig";

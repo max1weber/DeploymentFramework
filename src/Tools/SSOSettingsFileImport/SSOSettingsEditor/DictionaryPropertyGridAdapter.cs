@@ -2,14 +2,12 @@
 // http://www.differentpla.net/content/2005/02/using-propertygrid-with-dictionary
 
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.ComponentModel;
 using System.Collections;
+using System.ComponentModel;
 
 namespace SSOSettingsEditor
 {
-    class DictionaryPropertyGridAdapter : ICustomTypeDescriptor
+    internal class DictionaryPropertyGridAdapter : ICustomTypeDescriptor
     {
         private IDictionary _dictionary;
 

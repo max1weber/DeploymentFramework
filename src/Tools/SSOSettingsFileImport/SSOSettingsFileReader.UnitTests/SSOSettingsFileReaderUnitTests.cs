@@ -1,6 +1,5 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SSOSettingsFileManager;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Collections;
 
 namespace SSOSettingsFileManager.UnitTests
@@ -9,6 +8,7 @@ namespace SSOSettingsFileManager.UnitTests
     public class SSOSettingsFileReaderUnitTests
     {
         private const string AppName = "SSOSettingsFileReaderUnitTests";
+
         private const string DefaultSettings =
             @"<settings><property name=""StringValue"">BizTalkSample</property><property name=""Int32Value"">100</property><property name=""ssoAppUserGroup"">BizTalk Application Users</property><property name=""ssoAppAdminGroup"">BizTalk Server Administrators</property></settings>";
 

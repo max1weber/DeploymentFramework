@@ -45,9 +45,6 @@
     </WixExtension>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ESBToolkit21Integration.wxi" />
-    <Content Include="ESBToolkit22Integration.wxi" />
-    <Content Include="ESBToolkit23Integration.wxi" />
     <Content Include="ESBToolkit24Integration.wxi" />
     <Content Include="RuntimeComponents.wxi" />
     <Content Include="DeveloperTools.wxi" />

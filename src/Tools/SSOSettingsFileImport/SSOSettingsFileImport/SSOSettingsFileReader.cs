@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
 
 /// <summary>
 /// This class is simply a forwarder (with a few extra convenience methods) that lives outside the
@@ -29,7 +26,6 @@ public class SSOSettingsFileReader
     {
         return SSOSettingsFileManager.SSOSettingsFileReader.Read(affiliateApplication);
     }
-
 }
 
 namespace SSOSettingsFileManager

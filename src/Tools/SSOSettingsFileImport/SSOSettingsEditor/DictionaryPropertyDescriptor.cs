@@ -3,16 +3,14 @@
 
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Text;
 
 namespace SSOSettingsEditor
 {
-    class DictionaryPropertyDescriptor : PropertyDescriptor
+    internal class DictionaryPropertyDescriptor : PropertyDescriptor
     {
-        IDictionary _dictionary;
-        object _key;
+        private IDictionary _dictionary;
+        private object _key;
 
         internal DictionaryPropertyDescriptor(IDictionary d, object key)
             : base(key.ToString(), null)

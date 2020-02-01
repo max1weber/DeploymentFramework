@@ -4,9 +4,7 @@
 // See http://www.opensource.org/licenses/ms-pl.html.
 // All other rights reserved.
 
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Xml.Serialization;
@@ -15,22 +13,22 @@ namespace SSOSettingsFileManager
 {
     public static class SSOSettingsManager
     {
-        internal static void CreateApp(string appName, string userGroup, string adminGroup)
+        public static void CreateApp(string appName, string userGroup, string adminGroup)
         {
             SSOHelper.CreateApp(appName, userGroup, adminGroup);
         }
 
-        internal static void DeleteApp(string appName)
+        public static void DeleteApp(string appName)
         {
             SSOHelper.DeleteApp(appName);
         }
 
-        internal static bool AppExists(string appName)
+        public static bool AppExists(string appName)
         {
             return SSOHelper.AppExists(appName);
         }
 
-        internal static Hashtable GetSettings(string affiliateApplication, bool enableRemoteAccess)
+        public static Hashtable GetSettings(string affiliateApplication, bool enableRemoteAccess)
         {
             string propertyValue = GetRawSettings(affiliateApplication, enableRemoteAccess);
 
@@ -51,12 +49,12 @@ namespace SSOSettingsFileManager
             return htToReturn;
         }
 
-        internal static string GetRawSettings(string affiliateApplication, bool enableRemoteAccess)
+        public static string GetRawSettings(string affiliateApplication, bool enableRemoteAccess)
         {
             return SSOHelper.GetConfigInfo(affiliateApplication, enableRemoteAccess);
         }
 
-        internal static void WriteSettings(string affiliateApplication, Hashtable ht)
+        public static void WriteSettings(string affiliateApplication, Hashtable ht)
         {
             settings inSettings = new settings();
 
@@ -76,7 +74,7 @@ namespace SSOSettingsFileManager
             SSOHelper.SaveConfigInfo(affiliateApplication, sb.ToString());
         }
 
-        internal static void WriteRawSettings(string affiliateApplication, string settingsXml)
+        public static void WriteRawSettings(string affiliateApplication, string settingsXml)
         {
             SSOHelper.SaveConfigInfo(affiliateApplication, settingsXml);
         }

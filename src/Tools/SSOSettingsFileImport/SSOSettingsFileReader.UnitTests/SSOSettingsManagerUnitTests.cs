@@ -1,6 +1,5 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SSOSettingsFileManager;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Collections;
 
 namespace SSOSettingsFileManager.UnitTests
@@ -37,7 +36,7 @@ namespace SSOSettingsFileManager.UnitTests
             {
                 SSOSettingsManager.DeleteApp(AppName);
             }
-            catch {}
+            catch { }
 
             try
             {
