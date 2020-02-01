@@ -1,11 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2010
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESB.Resolver.Sso", "ESB.Resolver.SSO\ESB.Resolver.Sso.csproj", "{FCD02688-FA14-4A55-A31B-E09CB9026E14}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESB.Resolver.Sso.TestItineraries", "ESB.Resolver.Sso.TestItineraries\ESB.Resolver.Sso.TestItineraries.csproj", "{A7931CDE-13E3-47F2-9E7B-C077FF093CCA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Extenders.Resolvers.Sso", "Services.Extenders.Resolvers.Sso\Services.Extenders.Resolvers.Sso.csproj", "{BE69F62F-D237-44B2-9D9C-64E79A4CB8D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Refs", "Refs", "{CAFC29E3-5FFC-44DC-9A4C-44259CE1D51D}"
+	ProjectSection(SolutionItems) = preProject
+		Refs\SSOSettingsFileReader.dll = Refs\SSOSettingsFileReader.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,5 +35,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FB8B738-F39D-4F58-9E3D-F1698C298FF8}
 	EndGlobalSection
 EndGlobal
